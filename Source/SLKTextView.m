@@ -189,6 +189,9 @@ static NSString *const SLKTextViewGenericFormattingSelectorPrefix = @"slk_format
     return lines;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (NSUInteger)maxNumberOfLines
 {
     NSUInteger numberOfLines = _maxNumberOfLines;
@@ -217,6 +220,8 @@ static NSString *const SLKTextViewGenericFormattingSelectorPrefix = @"slk_format
     
     return numberOfLines;
 }
+
+#pragma clang diagnostic pop
 
 - (BOOL)isTypingSuggestionEnabled
 {
@@ -761,6 +766,10 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
     [self.undoManager redo];
 }
 
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (void)slk_presentFormattingMenu:(id)sender
 {
     NSMutableArray *items = [NSMutableArray arrayWithCapacity:self.registeredFormattingTitles.count];
@@ -785,6 +794,8 @@ SLKPastableMediaType SLKPastableMediaTypeFromNSString(NSString *string)
     
     [menu setMenuVisible:YES animated:YES];
 }
+
+#pragma clang diagnostic pop
 
 - (NSString *)slk_formattingTitleFromSelector:(SEL)selector
 {

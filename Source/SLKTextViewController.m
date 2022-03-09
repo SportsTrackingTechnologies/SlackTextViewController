@@ -145,6 +145,9 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     return self;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (void)slk_commonInit
 {
     [self slk_registerNotifications];
@@ -160,6 +163,7 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     self.extendedLayoutIncludesOpaqueBars = YES;
 }
 
+#pragma clang diagnostic pop
 
 #pragma mark - View lifecycle
 
@@ -458,6 +462,9 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     else return scrollViewHeight;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (CGFloat)slk_topBarsHeight
 {
     // No need to adjust if the edge isn't available
@@ -477,6 +484,8 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     
     return topBarsHeight;
 }
+
+#pragma clang diagnostic pop
 
 - (NSString *)slk_appropriateKeyboardNotificationName:(NSNotification *)notification
 {
@@ -1158,6 +1167,9 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     }
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (void)slk_postKeyboarStatusNotification:(NSNotification *)notification
 {
     if ([self ignoreTextInputbarAdjustment] || self.isTransitioning) {
@@ -1186,6 +1198,8 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     NSString *name = [self slk_appropriateKeyboardNotificationName:notification];
     [[NSNotificationCenter defaultCenter] postNotificationName:name object:self.textView userInfo:userInfo];
 }
+
+#pragma clang diagnostic pop
 
 - (void)slk_enableTypingSuggestionIfNeeded
 {
@@ -1859,6 +1873,9 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     return [NSString stringWithFormat:@"%@.%@", SLKTextViewControllerDomain, key];
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (void)slk_reloadTextView
 {
     NSString *key = [self slk_keyForPersistency];
@@ -1882,6 +1899,8 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     }
 }
 
+#pragma clang diagnostic pop
+
 - (void)cacheTextView
 {
     [self slk_cacheAttributedTextToDisk:self.textView.attributedText];
@@ -1891,6 +1910,9 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
 {
     [self slk_cacheAttributedTextToDisk:nil];
 }
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 - (void)slk_cacheAttributedTextToDisk:(NSAttributedString *)attributedText
 {
@@ -1927,6 +1949,8 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
     
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
+#pragma clang diagnostic pop
 
 - (void)slk_cacheTextToDisk:(NSString *)text
 {

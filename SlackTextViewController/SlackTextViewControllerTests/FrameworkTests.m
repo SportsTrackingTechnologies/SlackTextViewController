@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import <SlackTextViewController/SlackTextViewController.h>
+#import "../../Source/SlackTextViewController.h"
 
 @interface SLKTextViewControllerTest : SLKTextViewController
 @end
