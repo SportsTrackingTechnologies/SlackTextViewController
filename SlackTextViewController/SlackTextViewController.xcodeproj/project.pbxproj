@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		127512E827D8EE31007867FD /* SlackTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 127512E727D8EE31007867FD /* SlackTextViewController.h */; };
 		F52253811CBE2F85002EECA9 /* SLKInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = F522536B1CBE2F85002EECA9 /* SLKInputAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F52253821CBE2F85002EECA9 /* SLKInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F522536C1CBE2F85002EECA9 /* SLKInputAccessoryView.m */; };
 		F52253831CBE2F85002EECA9 /* SLKTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = F522536D1CBE2F85002EECA9 /* SLKTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,7 +30,6 @@
 		F52253941CBE2F85002EECA9 /* UIScrollView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F522537E1CBE2F85002EECA9 /* UIScrollView+SLKAdditions.m */; };
 		F52253951CBE2F85002EECA9 /* UIView+SLKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F522537F1CBE2F85002EECA9 /* UIView+SLKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F52253961CBE2F85002EECA9 /* UIView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52253801CBE2F85002EECA9 /* UIView+SLKAdditions.m */; };
-		F5A782781BD0CEF300EC230B /* SlackTextViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A782771BD0CEF300EC230B /* SlackTextViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5B4E7931C4DA053005CBBE0 /* SlackTextViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A782741BD0CEF300EC230B /* SlackTextViewController.framework */; };
 		F5B4E79C1C4DA098005CBBE0 /* FrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B4E79B1C4DA098005CBBE0 /* FrameworkTests.m */; };
 /* End PBXBuildFile section */
@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		127512E727D8EE31007867FD /* SlackTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlackTextViewController.h; sourceTree = "<group>"; };
 		F522536B1CBE2F85002EECA9 /* SLKInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKInputAccessoryView.h; sourceTree = "<group>"; };
 		F522536C1CBE2F85002EECA9 /* SLKInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKInputAccessoryView.m; sourceTree = "<group>"; };
 		F522536D1CBE2F85002EECA9 /* SLKTextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextInput.h; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		F522537F1CBE2F85002EECA9 /* UIView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLKAdditions.h"; sourceTree = "<group>"; };
 		F52253801CBE2F85002EECA9 /* UIView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLKAdditions.m"; sourceTree = "<group>"; };
 		F5A782741BD0CEF300EC230B /* SlackTextViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlackTextViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5A782771BD0CEF300EC230B /* SlackTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlackTextViewController.h; sourceTree = "<group>"; };
 		F5A782791BD0CEF400EC230B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B4E78E1C4DA053005CBBE0 /* SlackTextViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackTextViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B4E7921C4DA053005CBBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,7 +115,6 @@
 		F5A782761BD0CEF300EC230B /* SlackTextViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F5A782771BD0CEF300EC230B /* SlackTextViewController.h */,
 				F5A7828F1BD0CF1D00EC230B /* Source */,
 				F5A782791BD0CEF400EC230B /* Info.plist */,
 			);
@@ -125,6 +124,7 @@
 		F5A7828F1BD0CF1D00EC230B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				127512E727D8EE31007867FD /* SlackTextViewController.h */,
 				F522536B1CBE2F85002EECA9 /* SLKInputAccessoryView.h */,
 				F522536C1CBE2F85002EECA9 /* SLKInputAccessoryView.m */,
 				F522536D1CBE2F85002EECA9 /* SLKTextInput.h */,
@@ -169,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52253811CBE2F85002EECA9 /* SLKInputAccessoryView.h in Headers */,
-				F5A782781BD0CEF300EC230B /* SlackTextViewController.h in Headers */,
 				F52253831CBE2F85002EECA9 /* SLKTextInput.h in Headers */,
 				F52253871CBE2F85002EECA9 /* SLKTextView.h in Headers */,
 				F522538E1CBE2F85002EECA9 /* SLKTypingIndicatorView.h in Headers */,
@@ -181,6 +180,7 @@
 				F522538D1CBE2F85002EECA9 /* SLKTypingIndicatorProtocol.h in Headers */,
 				F52253951CBE2F85002EECA9 /* UIView+SLKAdditions.h in Headers */,
 				F52253851CBE2F85002EECA9 /* SLKTextInputbar.h in Headers */,
+				127512E827D8EE31007867FD /* SlackTextViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = SlackTextViewControllerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTextViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,7 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = SlackTextViewControllerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTextViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
