@@ -270,6 +270,10 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.clipsToBounds = NO;
+        
+        if (@available(iOS 15.0, *)) {
+            _tableView.sectionHeaderTopPadding = 0.0f;
+        }
 
         [self slk_updateInsetAdjustmentBehavior];
     }
@@ -298,6 +302,10 @@ CGFloat const SLKAutoCompletionViewDefaultHeight = 140.0;
         _autoCompletionView.scrollsToTop = NO;
         _autoCompletionView.dataSource = self;
         _autoCompletionView.delegate = self;
+        
+        if (@available(iOS 15.0, *)) {
+            _autoCompletionView.sectionHeaderTopPadding = 0.0f;
+        }
         
 #ifdef __IPHONE_9_0
         if ([_autoCompletionView respondsToSelector:@selector(cellLayoutMarginsFollowReadableWidth)]) {
