@@ -45,9 +45,25 @@ __unused static CGFloat SLKPointSizeDifferenceForCategory(NSString *category)
 
 __unused static CGRect SLKKeyWindowBounds()
 {
-    NSArray *scenes=[[[UIApplication sharedApplication] connectedScenes] allObjects];
-    UIWindow *window=[[scenes objectAtIndex:0] window];
-    return window.bounds;
+    NSArray<UIScene *> *scenes = [[[UIApplication sharedApplication] connectedScenes] allObjects];
+    __block UIWindow *keyWindow = nil;
+
+    [scenes enumerateObjectsUsingBlock:^(UIScene * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:[UIWindowScene class]]) {
+            UIWindowScene *windowScene = (UIWindowScene *)obj;
+
+            if([windowScene keyWindow]) {
+                keyWindow = [windowScene keyWindow];
+                *stop = YES;
+            }
+        }
+    }];
+
+    if( keyWindow ){
+        return keyWindow.bounds;
+    } else {
+        return CGRectZero;
+    }
 }
 
 __unused static CGRect SLKRectInvert(CGRect rect)
